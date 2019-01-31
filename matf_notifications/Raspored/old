@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content=text/html; charset=utf-8>
+<title>Распоред</title> 
+<LINK href="exportsty.css" type=text/css rel=stylesheet>
+</head>
+<body topmargin="0" leftmargin="0" bgcolor="#ffffff">
+
+
+<table width="100%" height="90%">
+<tr><td width="10%" vAlign="top">
+
+<SCRIPT language="javascript">
+function OpenPage(page) {
+	if (page != "-1") {
+		window.open(page, '_self');
+	}
+}
+</SCRIPT>
+
+
+<FORM name="menu" action="" method="post">
+<table>
+<tr>
+    <td>
+	<h3 align="left"><br>МФ - РАСПОРЕД ЧАСОВА У ЗИМСКОМ СЕМЕСТРУ ШКОЛСКЕ 2018/19 ГОДИНЕ</h3>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    </td>
+</tr>
+
+<tr>
+   <td>
+	<div class="chooselabel">ГРУПЕ</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="forms" onchange="javascript:OpenPage(document.menu.forms.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="index.html">1И1А</OPTION><OPTION value="form_001.html">1И1Б</OPTION><OPTION selected value="form_002.html">1И1Ц</OPTION><OPTION value="form_003.html">1И2А</OPTION><OPTION value="form_004.html">1И2Б</OPTION><OPTION value="form_005.html">1И2Ц</OPTION><OPTION value="form_006.html">1О1А</OPTION><OPTION value="form_007.html">1О1Б</OPTION><OPTION value="form_008.html">1О2А</OPTION><OPTION value="form_009.html">1О2Б</OPTION><OPTION value="form_010.html">1О3А</OPTION><OPTION value="form_011.html">1О3Б</OPTION><OPTION value="form_012.html">1О4А</OPTION><OPTION value="form_013.html">1О4Б</OPTION><OPTION value="form_014.html">2И1А</OPTION><OPTION value="form_015.html">2И1Б</OPTION><OPTION value="form_016.html">2И2А</OPTION><OPTION value="form_017.html">2И2Б</OPTION><OPTION value="form_018.html">2МНВА</OPTION><OPTION value="form_019.html">2МНВБ</OPTION><OPTION value="form_020.html">2РЛ1А</OPTION><OPTION value="form_021.html">2РЛ1Б</OPTION><OPTION value="form_022.html">2РЛ2А</OPTION><OPTION value="form_023.html">2РЛ2Б</OPTION><OPTION value="form_024.html">3И1</OPTION><OPTION value="form_025.html">3И2</OPTION><OPTION value="form_026.html">3Л</OPTION><OPTION value="form_027.html">3М</OPTION><OPTION value="form_028.html">3Н</OPTION><OPTION value="form_029.html">3Р</OPTION><OPTION value="form_030.html">3В</OPTION><OPTION value="form_031.html">4И</OPTION><OPTION value="form_032.html">4ИМАС</OPTION><OPTION value="form_033.html">4Л</OPTION><OPTION value="form_034.html">4М</OPTION><OPTION value="form_035.html">4Н</OPTION><OPTION value="form_036.html">4Р</OPTION><OPTION value="form_037.html">4В</OPTION><OPTION value="form_038.html">5И</OPTION><OPTION value="form_039.html">5МЛ</OPTION><OPTION value="form_040.html">5ММ</OPTION><OPTION value="form_041.html">5МН</OPTION><OPTION value="form_042.html">5МР</OPTION><OPTION value="form_043.html">5МВ</OPTION><OPTION value="form_044.html">СЕМИНАР</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+
+
+<tr>
+   <td>
+	<div class="chooselabel">ПРЕДАВАЧИ</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="teachers" onchange="javascript:OpenPage(document.menu.teachers.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="teacher_000.html">Александар Јовић</OPTION><OPTION value="teacher_001.html">Александар Картељ</OPTION><OPTION value="teacher_002.html">Александар Липковски</OPTION><OPTION value="teacher_003.html">Александар Савић</OPTION><OPTION value="teacher_004.html">Александар Вељковић</OPTION><OPTION value="teacher_005.html">Александра Делић</OPTION><OPTION value="teacher_006.html">Александра Костић</OPTION><OPTION value="teacher_007.html">Ана Вуловић</OPTION><OPTION value="teacher_008.html">Биљана Стојановић</OPTION><OPTION value="teacher_009.html">Биљана Вујошевић</OPTION><OPTION value="teacher_010.html">Бобан Карапетровић</OPTION><OPTION value="teacher_011.html">Бојан Новаковић</OPTION><OPTION value="teacher_012.html">Бојана Јевтић</OPTION><OPTION value="teacher_013.html">Бојана Ласковић</OPTION><OPTION value="teacher_014.html">Бојана Милошевић</OPTION><OPTION value="teacher_015.html">Бојана Тодић</OPTION><OPTION value="teacher_016.html">Бранислав Првуловић</OPTION><OPTION value="teacher_017.html">Данијел Суботић</OPTION><OPTION value="teacher_018.html">Данијела Симић</OPTION><OPTION value="teacher_019.html">Данко Јоцић</OPTION><OPTION value="teacher_020.html">Дарко Милинковић</OPTION><OPTION value="teacher_021.html">Димитрије Шпадијер</OPTION><OPTION value="teacher_022.html">Ђорђе Коцић</OPTION><OPTION value="teacher_023.html">Ђорђе Кртинић</OPTION><OPTION value="teacher_024.html">Драган Ђокић</OPTION><OPTION value="teacher_025.html">Драгана Тодорић</OPTION><OPTION value="teacher_026.html">Драгољуб Кечкић</OPTION><OPTION value="teacher_027.html">Душан Марчета</OPTION><OPTION value="teacher_028.html">Душан Милосављевић</OPTION><OPTION value="teacher_029.html">Душан Онић</OPTION><OPTION value="teacher_030.html">Филип Марић</OPTION><OPTION value="teacher_031.html">Горан Ђанковић</OPTION><OPTION value="teacher_032.html">Гордана Павловић-Лажетић</OPTION><OPTION value="teacher_033.html">Игор Уљаревић</OPTION><OPTION value="teacher_034.html">Илија Врећица</OPTION><OPTION value="teacher_035.html">Ирена Павловић</OPTION><OPTION value="teacher_036.html">Иван Чукић</OPTION><OPTION value="teacher_037.html">Ивана Танасијевић</OPTION><OPTION value="teacher_038.html">Јелена Хаџи-Пурић</OPTION><OPTION value="teacher_039.html">Јелена Јоцковић</OPTION><OPTION value="teacher_040.html">Јелена Матовић</OPTION><OPTION value="teacher_041.html">Јелена Тасић</OPTION><OPTION value="teacher_042.html">Јована Ковачевић</OPTION><OPTION value="teacher_043.html">Катарина Лукић</OPTION><OPTION value="teacher_044.html">Кристина Костић</OPTION><OPTION value="teacher_045.html">Ленка Главаш</OPTION><OPTION value="teacher_046.html">Маја Рославцев</OPTION><OPTION value="teacher_047.html">Марек Светлик</OPTION><OPTION value="teacher_048.html">Марија Цупарић</OPTION><OPTION value="teacher_049.html">Марија Ивановић</OPTION><OPTION value="teacher_050.html">Марија Микић</OPTION><OPTION value="teacher_051.html">Маријана Бабић</OPTION><OPTION value="teacher_052.html">Марјана Шолајић</OPTION><OPTION value="teacher_053.html">Марко Обрадовић</OPTION><OPTION value="teacher_054.html">Марко Радовановић</OPTION><OPTION value="teacher_055.html">Матеј Милићевић</OPTION><OPTION value="teacher_056.html">Милан Банковић</OPTION><OPTION value="teacher_057.html">Милан Божић</OPTION><OPTION value="teacher_058.html">Милан Дражић</OPTION><OPTION value="teacher_059.html">Милан Јовановић</OPTION><OPTION value="teacher_060.html">Милан Лазаревић</OPTION><OPTION value="teacher_061.html">Милан Павловић</OPTION><OPTION value="teacher_062.html">Милан Перић</OPTION><OPTION value="teacher_063.html">Милена Вујошевић-Јаничић</OPTION><OPTION value="teacher_064.html">Милића Јовановић</OPTION><OPTION value="teacher_065.html">Миљан Кнежевић</OPTION><OPTION value="teacher_066.html">Милош Арсеновић</OPTION><OPTION value="teacher_067.html">Милош Ђорић</OPTION><OPTION value="teacher_068.html">Миодраг Матељевић</OPTION><OPTION value="teacher_069.html">Мирјана Ђорић</OPTION><OPTION value="teacher_070.html">Мирјана Маљковић</OPTION><OPTION value="teacher_071.html">Мирко Спасић</OPTION><OPTION value="teacher_072.html">Мирослав Марић</OPTION><OPTION value="teacher_073.html">Мирослава Антић</OPTION><OPTION value="teacher_074.html">Младен Николић</OPTION><OPTION value="teacher_075.html">Небојша Икодиновић</OPTION><OPTION value="teacher_076.html">Небојша Лажетић</OPTION><OPTION value="teacher_077.html">Немања Мићовић</OPTION><OPTION value="teacher_078.html">Ненад Митић</OPTION><OPTION value="teacher_079.html">Никола Лелас</OPTION><OPTION value="teacher_080.html">Никола Мутавџић</OPTION><OPTION value="teacher_081.html">Нина Радојичић</OPTION><OPTION value="teacher_082.html">Огњен Коцић</OPTION><OPTION value="teacher_083.html">Павле Младеновић</OPTION><OPTION value="teacher_084.html">Петар Мелентијевић</OPTION><OPTION value="teacher_085.html">Предраг Јаничић</OPTION><OPTION value="teacher_086.html">Предраг Тановић</OPTION><OPTION value="teacher_087.html">С-ААФ1</OPTION><OPTION value="teacher_088.html">Сана Ђурђевић</OPTION><OPTION value="teacher_089.html">Сандра Живановић</OPTION><OPTION value="teacher_090.html">Саша Малков</OPTION><OPTION value="teacher_091.html">Синиша Врећица</OPTION><OPTION value="teacher_092.html">Слађана Анђелковић</OPTION><OPTION value="teacher_093.html">С-МА1</OPTION><OPTION value="teacher_094.html">С-МА2</OPTION><OPTION value="teacher_095.html">С-МА3</OPTION><OPTION value="teacher_096.html">С-МА4</OPTION><OPTION value="teacher_097.html">С-МА5</OPTION><OPTION value="teacher_098.html">С-МА6</OPTION><OPTION value="teacher_099.html">Соња Телебаковић Онић</OPTION><OPTION value="teacher_100.html">Срђан Вукмировић</OPTION><OPTION value="teacher_101.html">С-РИ1</OPTION><OPTION value="teacher_102.html">С-РИ2</OPTION><OPTION value="teacher_103.html">С-РИ3</OPTION><OPTION value="teacher_104.html">С-РИ4</OPTION><OPTION value="teacher_105.html">С-РИ5</OPTION><OPTION value="teacher_106.html">С-РИ6</OPTION><OPTION value="teacher_107.html">С-РИ7</OPTION><OPTION value="teacher_108.html">С-РИ8</OPTION><OPTION value="teacher_109.html">С-РИ9</OPTION><OPTION value="teacher_110.html">Стефан Мишковић</OPTION><OPTION value="teacher_111.html">С-ТОП1</OPTION><OPTION value="teacher_112.html">С-ВИС1</OPTION><OPTION value="teacher_113.html">С-ВИС2</OPTION><OPTION value="teacher_114.html">С-ВИС3</OPTION><OPTION value="teacher_115.html">Тамара Милић</OPTION><OPTION value="teacher_116.html">Тања Стојадиновић</OPTION><OPTION value="teacher_117.html">Тијана Шукиловић</OPTION><OPTION value="teacher_118.html">Весна Маринковић</OPTION><OPTION value="teacher_119.html">Виктор Радовић</OPTION><OPTION value="teacher_120.html">Владица Андрејић</OPTION><OPTION value="teacher_121.html">Владимир Божин</OPTION><OPTION value="teacher_122.html">Владимир Филиповић</OPTION><OPTION value="teacher_123.html">Владимир Кузмановић</OPTION><OPTION value="teacher_124.html">Златко Лазовић</OPTION><OPTION value="teacher_125.html">Зоран Павловић</OPTION><OPTION value="teacher_126.html">Зоран Петрић</OPTION><OPTION value="teacher_127.html">Зоран Пуцановић</OPTION><OPTION value="teacher_128.html">Зоран Ракић</OPTION><OPTION value="teacher_129.html">Зорица Дражић</OPTION><OPTION value="teacher_130.html">Зорица Станимировић</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+<tr>
+   <td>
+	<div class="chooselabel">УЧИОНИЦЕ</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="rooms" onchange="javascript:OpenPage(document.menu.rooms.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="room_000.html">406</OPTION><OPTION value="room_001.html">704</OPTION><OPTION value="room_002.html">706</OPTION><OPTION value="room_003.html">710</OPTION><OPTION value="room_004.html">718</OPTION><OPTION value="room_005.html">809</OPTION><OPTION value="room_006.html">821</OPTION><OPTION value="room_007.html">830</OPTION><OPTION value="room_008.html">840</OPTION><OPTION value="room_009.html">843</OPTION><OPTION value="room_010.html">844</OPTION><OPTION value="room_011.html">БИМ</OPTION><OPTION value="room_012.html">ДЛАБ</OPTION><OPTION value="room_013.html">ЈАГ1</OPTION><OPTION value="room_014.html">ЈАГ2</OPTION><OPTION value="room_015.html">ЈАГ3</OPTION><OPTION value="room_016.html">ЈАГ3&4</OPTION><OPTION value="room_017.html">ЈАГ4</OPTION><OPTION value="room_018.html">КАБМ</OPTION><OPTION value="room_019.html">РЛАБ</OPTION><OPTION value="room_020.html">Н225</OPTION><OPTION value="room_021.html">Н201</OPTION><OPTION value="room_022.html">Н202</OPTION><OPTION value="room_023.html">Н203</OPTION><OPTION value="room_024.html">Н102</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td>
+    </td>
+</tr>
+
+
+<tr>
+   <td>
+	
+   </td>
+</tr>
+
+<tr>
+<td>
+	
+</td>
+</tr>
+</table>
+
+
+</FORM>
+</td><td width="100%" height="90%" valign="top">
+
+
+
+
+<h1 align="center"><font color="#0000A0">ГРУПА: 1И1Ц</font></h1>
+<table border="1" bordercolor="#000000" cellspacing="0" cellpadding="0">
+<tr>
+<td rowspan="2" width="100" valign="middle" align="center" bgcolor = "#ffffff"><br></td>
+<td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>1</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>2</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>3</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>4</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>5</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>6</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>7</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>8</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>9</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>10</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>11</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>12</big></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><big>13</big></td></tr>
+<tr>
+<td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>08:15 - 09:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>09:15 - 10:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>10:15 - 11:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>11:15 - 12:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>12:15 - 13:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>13:15 - 14:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>14:15 - 15:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>15:15 - 16:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>16:15 - 17:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>17:15 - 18:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>18:15 - 19:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>19:15 - 20:00</small></td><td width="7%" valign="middle" align="center"  class="purehtml_headers"><small>20:15 - 21:00</small></td></tr>
+<tr>
+<td valign="middle" align="center" height="70"  class="purehtml_headers"><big>Понедељак</big></td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#FFFF80">Програмирање 1 (вежбе)<br>Марјана Шолајић<br>704</td>
+<td ><br></td>
+<td ><br></td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#80FFFF">Увод у организацију и архитектуру рачунара 1<br>Нина Радојичић<br>830</td>
+<td ><br></td>
+<td colspan="2"valign="middle" align="center"  bgcolor="#FF0000">Техничко и научно писање<br>Милена Вујошевић-Јаничић<br>ДЛАБ</td>
+<td ><br></td>
+<td ><br></td>
+</tr>
+<tr>
+<td valign="middle" align="center" height="70"  class="purehtml_headers"><big>Уторак</big></td>
+<td ><br></td>
+<td ><br></td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#00FFFF">Програмирање 1<br>Предраг Јаничић<br>706</td>
+<td ><br></td>
+<td colspan="2"valign="middle" align="center"  bgcolor="#808000">Енглески 1<br>Зоран Павловић<br>821</td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+</tr>
+<tr>
+<td valign="middle" align="center" height="70"  class="purehtml_headers"><big>Среда</big></td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#0080FF">Линеарна алгебра и аналитичка геометрија (вежбе)<br>Илија Врећица<br>БИМ</td>
+<td ><br></td>
+<td ><br></td>
+<td colspan="2"valign="middle" align="center"  bgcolor="#FFFF80">Увод у организацију и архитектуру рачунара 1 (вежбе)<br>Биљана Стојановић<br>РЛАБ</td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+</tr>
+<tr>
+<td valign="middle" align="center" height="70"  class="purehtml_headers"><big>Четвртак</big></td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#808000">Дискретне структуре 1<br>Зоран Пуцановић<br>706</td>
+<td colspan="3"valign="middle" align="center"  bgcolor="#FF0000">Линеарна алгебра и аналитичка геометрија<br>Тања Стојадиновић<br>821</td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+</tr>
+<tr>
+<td valign="middle" align="center" height="70"  class="purehtml_headers"><big>Петак</big></td>
+<td colspan="2"valign="middle" align="center"  bgcolor="#FFFF80">Дискретне структуре 1 (вежбе)<br>Маја Рославцев<br>Н225</td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+<td ><br></td>
+</tr>
+</table>
+
+
+
+
+
+</td></tr>
+</table>
+
+<p align="right"><a href="form_003.html">СЛЕДЕЋА СТРАНИЦА</a></p>
+</a></p>
+<h3 align="center">
+- ЖЕЛИМО ВАМ ПУНО УСПЕХА У РАДУ - </h3>
+<p align="center">
+<a href="index.html">ГРУПЕ</a>&nbsp;
+<a href="teacher_000.html">ПРЕДАВАЧИ</a>&nbsp;
+<a href="room_000.html">УЧИОНИЦЕ</a>&nbsp;
+
+</p>
+
+<p>ФИНАЛНА ВЕРЗИЈА: СУБОТА 29.09.2018.</br>
+
+МК
+
+</br>
+
+</body>
+</html>
+
+
+
+<!-- ===================================================================
+     Пребацивање HTML документа из латинице у ћирилицу обављено уз помоћ
+     програма „Вучко“ верзија 0.989, http://galeb.etf.bg.ac.yu/~alexa/
+     Copyright © 2003. Александар Веселиновић — Алекса
+     =================================================================== -->

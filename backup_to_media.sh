@@ -22,6 +22,10 @@ while [ $? -eq 1 ]; do
 	sudo umount "$parition" 2>/dev/null
 done
 
+if [ ! -d /mnt/backup ]; then
+	sudo mkdir /mnt/backup
+fi
+
 sudo mount "$partition" /mnt/backup
 
 

@@ -3,6 +3,10 @@
 cd "$(dirname "$0")"
 python3 scrape.py > log2
 
+if [ ! -f log1 ]; then
+	echo "" > log1
+fi
+
 difference=$(diff log1 log2 | wc -l)
 
 if [ $difference -ge 1 ]; then

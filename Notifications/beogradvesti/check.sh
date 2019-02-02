@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd /home/nikola/Documents/Scripts/beogradvesti
+cd "$(dirname "$0")"
+
 link="https://www.srbijadanas.com/vesti/beograd"
 message="Beograd vesti"
 

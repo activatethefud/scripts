@@ -17,7 +17,8 @@ Just run ```./backup_to_media.sh``` and select your drive and partition.
 Simple script for displaying warnings for low battery. It should be started on boot.
 
 #### Dependencies
-*libnotify
-*acpi
+
+* libnotify
+* acpi
 
 

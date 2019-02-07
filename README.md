@@ -23,4 +23,4 @@ Simple script for displaying warnings for low battery or battery full state. It 
 
 ![battery full notification](https://i.imgur.com/mmp65lS.png)
 
-
+*Note: i3status says battery is around 73%. This is not correct.*

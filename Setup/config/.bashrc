@@ -166,4 +166,5 @@ alias htop="htop -s PERCENT_MEM"
 alias drive="/home/$(whoami)/Documents/Scripts/drive.sh"
 alias deldrive="/home/$(whoami)/Documents/Scripts/deldrive.sh"
 alias build="make; sudo make install"
-
+alias repos="cd /home/nikola/Documents/repos; clear"
+alias site="cd /home/nikola/Documents/repos/nsutic.github.io; clear"

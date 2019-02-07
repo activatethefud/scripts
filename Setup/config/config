@@ -160,7 +160,7 @@ set $BROWSER /home/nikola/Downloads/tor-browser_en-US/Browser/start-tor-browser
 #set $BROWSER firefox
 
 #}
-# Startup: {
+
 
 exec redshift-gtk
 exec "setxkbmap -layout us,hr,rs -option grp:ctrl_shift_toggle"
@@ -175,6 +175,8 @@ exec /home/nikola/Documents/Scripts/Startup/feh_rotation.sh
 exec /home/nikola/Documents/Scripts/Startup/battery_notify.sh
 #exec /home/nikola/Documents/Scripts/net_stabilizer.sh
 exec /home/nikola/Documents/Scripts/Startup/wlx.sh
+exec /home/nikola/.config/radicale/radicale.sh
+exec /home/nikola/Documents/repos/fakecron/daily/fakecron.daily.sh
 
 # }
 
@@ -197,7 +199,7 @@ bindsym $mod+Print exec scrot --focused -e 'mv $f ~/Documents/Screenshots'
 bindsym $mod+g exec firefox -private https://www.google.com/calendar https://www.google.com/drive/ www.myfitnesspal.com
 bindsym $mod+b exec $BROWSER -private startpage.com
 bindsym $mod+p exec poweroff
-bindsym $mod+shift+a exec /home/nikola/Documents/KP/postavi.sh > /home/nikola/Documents/KP/log
+#bindsym $mod+shift+a exec /home/nikola/Documents/KP/postavi.sh > /home/nikola/Documents/KP/log
 bindsym $mod+shift+s exec $TERMINAL -e 'ssh koditv@178.148.99.220'
 #bindsym $mod+c exec chmod +x /home/nikola/Documents/Bash/*
 bindsym $mod+c exec galculator

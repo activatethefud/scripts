@@ -1,6 +1,8 @@
 rsync
 compton
 xfce4-terminal
+xbaclight
+redshift-gtk
 gcc
 g++
 network-manager

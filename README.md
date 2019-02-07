@@ -14,11 +14,13 @@ Just run ```./backup_to_media.sh``` and select your drive and partition.
 
 ### battery\_notify
 
-Simple script for displaying warnings for low battery. It should be started on boot.
+Simple script for displaying warnings for low battery or battery full state. It should be started on boot.
 
 #### Dependencies
 
 * libnotify
 * acpi
+
+![battery full notification](https://i.imgur.com/mmp65lS.png)
 
 

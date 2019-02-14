@@ -14,7 +14,7 @@ gen_targz() {
 }
 
 backup_targz() {
-	rsync /home/nikola/HP15dotfiles.tar.gz nikola@marcus:/home/nikola/Backups/
+	rsync --modify-window=1 /home/nikola/HP15dotfiles.tar.gz nikola@marcus:/home/nikola/Backups/
 }
 
 finish() {
@@ -24,6 +24,6 @@ finish() {
 
 copy_dotfiles && 
 gen_targz && 
-backup_targz && 
+backup_targz;
 finish 
 

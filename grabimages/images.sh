@@ -9,7 +9,7 @@ extract() {
 		rm -r images
 		mkdir images
 	fi
-	grep -P -o "href=\".*?\"" thread | grep -P -o "\".*\.png\"" | sed "s/\"//g; s/\/\///" | uniq  > ./images/urls
+	grep -P -o "href=\".*?\"" thread | grep -P -o "\".*\.(gif|jpg|jpeg|png)\"" | sed "s/\"//g; s/\/\///" | uniq  > ./images/urls
 	cd images
 	wget -U mozilla -nc -e robots=off --input-file=urls
 }

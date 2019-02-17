@@ -21,5 +21,3 @@ html() {
 html $@
 extract
 
-sxiv ./images/*
-

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-torrentinfo(){
-	downloading="$(transmission-remote --auth transmission:transmission -l | grep Downloading | wc -l)"
-	finished="$(transmission-remote --auth transmission:transmission -l | grep Idle | grep Done | wc -l)"
-	echo -e "F:$finished D:$downloading | \c"
-
-}
-torrentinfo

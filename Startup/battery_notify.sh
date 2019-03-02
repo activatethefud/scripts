@@ -6,7 +6,7 @@ while true; do
 	battery_level=`acpi -b | awk {'gsub("%|,",""); print $4'}`
 	battery_state=`acpi -b | awk {'gsub(",",""); print $3'}`
 	export DISPLAY=:0
-	if [ $battery_level -ge 100 ] && [ "$battery_state" = "Full" ]; then
+	if [ $battery_level -ge 99 ]; then
 		notify-send "Battery full" "Unplug the charger."
 		sleep 5m
 		continue

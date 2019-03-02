@@ -13,10 +13,11 @@ printbar(){
 	batlvl="$(acpi -b | grep -Po "\d+%")"
 	batstate="$(acpi -b | awk {'print $3'} | sed 's/,//g')"
 	ramused="$(free -h | grep Mem | awk {'print $3'})"
+	biggestdir="$(basename $(du ~ | sort -nr -k1 | head | sed '1d' | head -n-8 | awk {'print $2'}))"
 	
 	
 # Print bar
-	echo -e "RAM:$ramused | D:$downloading I:$idle F:$finished | $battemp/C BAT:$batlvl | $batstate | $ethip | $rootspace+$homespace | "$(date -R)" \c"
+	echo -e "RAM:$ramused | $biggestdir | D:$downloading I:$idle F:$finished | $battemp/C BAT:$batlvl | $batstate | $ethip | $rootspace+$homespace | "$(date -R)" \c"
 	
 }
 

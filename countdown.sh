@@ -15,5 +15,5 @@ while [ $min -ne 0 ]; do
 	clear
 done
 
-notify-send -t 25 "$line"
+notify-send -t 5000 "$line"
 #mpv /home/nikola/Documents/alert.mp3 &

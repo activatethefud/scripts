@@ -3,6 +3,13 @@
 
 printbar(){
 # Get variables
+	# Recording
+	if [ $(ps -e | grep ffmpeg | wc -l ) -ge 1 ]; then
+		recording="*REC*"
+	else
+		recording=""
+	fi	
+
 	battemp="$(acpi -t | awk {'print $4'})" 2>/dev/null
 	homespace="$(df -h | grep -w /home | awk {'print $4'})" 2>/dev/null
 	rootspace="$(df -h | grep -w / | awk {'print $4'})" 2>/dev/null
@@ -17,7 +24,7 @@ printbar(){
 	
 	
 # Print bar
-	echo -e "RAM:$ramused | $biggestdir | D:$downloading I:$idle F:$finished | $battemp/C BAT:$batlvl | $batstate | $ethip | $rootspace+$homespace | "$(date -R)" \c"
+	echo -e "$recording | RAM:$ramused | $biggestdir | D:$downloading I:$idle F:$finished | $battemp/C BAT:$batlvl | $batstate | $ethip | $rootspace+$homespace | "$(date -R)" \c"
 	
 }
 

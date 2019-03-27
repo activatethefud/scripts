@@ -16,4 +16,4 @@ while [ $min -ne 0 ]; do
 done
 
 notify-send -t 5000 "$line"
-#mpv /home/nikola/Documents/alert.mp3 &
+mpv /home/$(whoami)/Documents/alert.mp3 &

@@ -6,7 +6,7 @@
 # Set the internal file separator to newline
 IFS=$'\n'
 
-# Basic information
+# Basic information (Edit this for your user)
 user_to_backup="nikola"
 server_user="nikola"
 server_address="marcus" # IP here or /etc/hosts alias
@@ -17,7 +17,6 @@ export HOME="/home/$user_to_backup"
 
 # Create .backup_ignore file
 [ ! -f $HOME/.backup_ignore ] && su "$user_to_backup" -c "touch $HOME/.backup_ignore"
-exit
 
 # Create the backup directory on the remote site
 ssh "$server_user"@"$server_address" "[ -d $server_backup_dir ] || mkdir $server_backup_dir"
@@ -35,4 +34,5 @@ rsync \
 $(ls -a $HOME | diff --left-column - $HOME/.backup_ignore | grep '^<' | sed "s|<\s|$HOME/|" ) \
 "$server_user"@"$server_address":"$server_backup_dir" &&
 
+# Finish
 su "$user_to_backup" -c 'notify-send "Backup:" "Finished backing up."' 2>/dev/null

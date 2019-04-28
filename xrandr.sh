@@ -9,6 +9,7 @@ if [ ! -z "$external" ];  then
 	if [ "$external" = "VGA1" ]; then
 		xrandr --output "$external" --mode '1600x900_60.00'
 		fi
-	feh --bg-scale ~/Wallpapers/current.jpg
+	[ "$external" = "LVDS1" ] &&
+	xrandr --output "$external" --mode 1366x768
 
 fi

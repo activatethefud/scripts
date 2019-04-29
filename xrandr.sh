@@ -12,4 +12,6 @@ if [ ! -z "$external" ];  then
 	[ "$external" = "LVDS1" ] &&
 	xrandr --output "$external" --mode 1366x768
 
+else
+	xrandr --output "$primary" --mode 1366x768
 fi

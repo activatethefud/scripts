@@ -1,10 +1,17 @@
 #!/bin/bash
 # This script makes a synchronized copy of your system user's home directory of the files listed in .backup_list
-# The script is meant to be run from anacrontab, in which case it runs as root.
-# The root user needs to have passwordless login to the server, use ssh-copy-id for this.
 
 # Set the internal file separator to newline
 IFS=$'\n'
+
+# Helper function to remove lines from .backup_list that refer to deleted files
+remove_nonexistant_files() {
+	for file in $(sed '' "$1"); do
+		[ ! -e "$file" ] &&
+		sed -i "/$file/d" "$1"
+	done
+}
+
 
 # Work from the user's directory
 cd "$HOME"
@@ -16,6 +23,8 @@ server_backup_dir="/home/nikola/Backup/$(uname -n)/"
 
 # Create .backup_list file
 [ ! -f ./.backup_list ] && touch ./.backup_list
+
+remove_nonexistant_files ./.backup_list
 
 # Create the backup directory on the remote site
 ssh "$server_user"@"$server_address" "[ -d $server_backup_dir ] || mkdir $server_backup_dir"
@@ -29,9 +38,11 @@ rsync \
 --recursive \
 --modify-window=1 \
 --copy-links \
---delete \
-$(sed '' .backup_list)
+--del \
+-v \
+$(sed '' .backup_list) \
 "$server_user"@"$server_address":"$server_backup_dir" &&
 
 # Finish
-su "$user_to_backup" -c 'notify-send "Backup:" "Finished backing up."' 2>/dev/null
+notify-send -t 0 "Backup @ $(date +%T)" "Backed up successfully." ||
+notify-send -t 0 "Backup @ $(date +%T)" "Error during backup."

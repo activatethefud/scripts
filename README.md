@@ -10,7 +10,7 @@ This script uses ```dmenu``` and ![gdrive](https://github.com/prasmussen/gdrive)
 
 This script also uses ```dmenu```. It backs up all files from Documents and config files from the ~ home directory. Use this to make backups to external drives (e.g. Removable USB drive). Very useful for when you need a quick backup on-the-go.
 
-Just run ```./backup_to_media.sh``` and select your drive and partition.
+Just run ```./btm.sh``` and select your drive and partition.
 
 ### battery\_notify
 

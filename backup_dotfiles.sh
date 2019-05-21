@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 copy_dotfiles() {
 	if [ ! -d /home/nikola/Dotfiles ]; then

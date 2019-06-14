@@ -1,1 +1,0 @@
-rsync compton xfce4-terminal xbaclight redshift-gtk gcc g++ network-manager pulseaudio offlineimap muttrc msmtp feh vim sxiv redshift-gtk xbacklight mpv htop ranger i3 i3lock xdm xorg cmus python3 python3-bs4 python-pip python-numpy python-pandas

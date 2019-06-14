@@ -12,7 +12,7 @@ printbar(){
 
 	battemp="$(acpi -t | head -1 | awk {'print $4'})" 2>/dev/null
 	homespace="$(df -h | grep -w /home | awk {'print $4'})" 2>/dev/null
-	rootspace="$(df -h | grep -w / | awk {'print $4'})" 2>/dev/null
+	rootspace="$(df -h | grep -P "/$" | awk {'print $4'})" 2>/dev/null
 	ethip="$(ip address show | grep 192 | head -1 | awk {'print $2'})" 2>/dev/null
 	downloading="$(transmission-remote --auth transmission:transmission -l | sed '1d' | grep Down | wc -l)" 2>/dev/null
 	finished="$(transmission-remote --auth transmission:transmission -l | grep Idle | grep Done | wc -l)" 2>/dev/null

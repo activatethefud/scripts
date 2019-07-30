@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Search the site 1337x.to for magnet links
+# If search string is multiple worded, put it into parentheses "example search string"
+# Outputs magnet link to be used with any torrent client
+# Usage: <script> <search_string>
+
+ERR_NO_ARGS=35
+
+if [ -z "$1" ]
+then
+	printf "Not enough arguments!\\nUsage: <script> <search_string>\\n"
+	exit $ERR_NO_ARGS
+fi
+
+IFS=$'\n'
+SEARCH_STRING="$(echo "https://1337x.to/search/$1/1/" | sed 's/\ /+/g')"
+
+# Select a torrent from a list of torrents found
+####################################################################
+# By default the select statement's output is printed to stderr (2)#
+####################################################################
+select torrent in $(curl -s "$SEARCH_STRING" | grep -P -o '/torrent/[^"]*')
+do
+	TORRENT_LINK="https://1337x.to$torrent"
+	curl -s "$TORRENT_LINK" | grep -m 1 -P -o 'magnet[^"]*'
+	break
+done

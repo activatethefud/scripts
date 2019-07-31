@@ -1,9 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
-external="$(xrandr | grep -w connected | grep -v primary | awk {'print $1'})"
-primary="$(xrandr | grep -w primary | awk {'print $1'})"
+# Switch between laptop screen and desktop screen
+# Edit the resolutions to needed
 
-if [ ! -z "$external" ];  then
+external="$(xrandr | grep -w connected | grep -v primary | awk '{print $1}')"
+primary="$(xrandr | grep -w primary | awk '{print $1}')"
+
+if [ -n "$external" ];  then
 	xrandr --output "$primary" --off
 	xrandr --output "$external" --primary --auto
 	if [ "$external" = "VGA1" ]; then

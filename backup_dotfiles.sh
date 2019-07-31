@@ -4,11 +4,13 @@ copy_dotfiles() {
 	if [ ! -d /home/nikola/Dotfiles ]; then
 		mkdir /home/nikola/Dotfiles
 	fi
-	find /home/nikola -name "\.*" -exec cp -r {} /home/nikola/Dotfiles/ \; &>/dev/null
+	find /home/nikola -name "\.*" -exec cp -r {} /home/nikola/Dotfiles/ \; 1>&2 2>/dev/null
 }
 
+NO_DIR_ERROR=35
+
 gen_targz() {
-	cd /home/nikola
+	cd /home/nikola || exit $NO_DIR_ERROR
 	tar -c /home/nikola/Dotfiles -f /home/nikola/HP15dotfiles.tar
 	gzip --rsyncable /home/nikola/HP15dotfiles.tar
 }

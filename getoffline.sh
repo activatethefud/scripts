@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-cd "$(dirname "$0")"
+ERR_NO_DIR=33
+cd "$(dirname "$0")" || exit $ERR_NO_DIR
 
 while true; do
 	url="$(xsel -b -o)"
@@ -8,8 +9,10 @@ while true; do
 		touch archive
 	fi
 
-	if [ ! -z "$url" ] && [ -z "$(grep "$url" archive)" ]; then
-		if [ ! -z "$(echo "$url" | grep youtube)" ]; then
+	if [ -n "$url" ] && ! grep -q "$url" archive
+		then
+		if echo "$url" | grep -q youtube
+			then
 			youtube-dl -f 22 "$url" || youtube-dl "$url" &
 		else
 			wget -U mozilla -t 2 -k -p -e robots=off "$url" &&

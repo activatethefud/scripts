@@ -1,17 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
-echo -e "Enter the number of minutes:\c"
-read min
+printf "Enter the number of minutes:"
+read -r min
 
-echo -e "Enter message:\c"
-read line
+printf "Enter message:"
+read -r line
 
 clear
-while [ $min -ne 0 ]; do
+while [ "$min" -ne 0 ]; do
 	echo "$line"
 	echo "Minutes left:$min"
 	sleep 1m
-	let min=min-1
+	min=$((min-1))
 	clear
 done
 

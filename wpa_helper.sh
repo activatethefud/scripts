@@ -2,6 +2,7 @@
 
 # Use wpa_supplicant to connect to an Access Point
 
+DNS='172.105.73.239'
 ERR_BAD_USAGE=30
 ERR_NO_INTERFACE=31
 ERR_IF_DOWN=32
@@ -34,12 +35,15 @@ fi
 ip link set "$INTERFACE" up || exit "$ERR_IF_DOWN"
 wpa_passphrase "$SSID" "$PASS" 1 > "$CONFIG"
 wpa_supplicant -i "$INTERFACE" -c "$CONFIG" -B
+echo "$DNS" > /etc/resolv.conf
 
 # Renewew DHCP leases
 dhclient -r
 
 # Start dhclient to get an IP address
 dhclient
+	
+echo "nameserver $DNS" > /etc/resolv.conf
 
 fi
 
@@ -56,6 +60,8 @@ then
 
 	dhclient -r
 	dhclient
+	
+	echo "nameserver $DNS" > /etc/resolv.conf
 
 else
 	

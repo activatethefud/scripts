@@ -4,11 +4,12 @@ user="$USER"
 
 media=$(sudo fdisk -l | grep "Disk /dev" | dmenu -l 5 -i -p "Choose media:" | awk '{gsub(":","");print $2}')
 
+exit_err() {
+		echo "$1"
+		exit 2
+}
 
-if [ "$media" = "" ]; then
-	echo "Error! No media selected! Exiting..."
-	exit 2
-fi
+[ "$media" = "" ] && exit_err "No media selected!"
 
 partition=$(sudo fdisk -l | grep "$media" | tail -n+2 | dmenu -l 5 -i -p "Choose partition:" | awk '{print $1}')
 

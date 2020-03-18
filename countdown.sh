@@ -16,4 +16,4 @@ while [ "$min" -ne 0 ]; do
 done
 
 notify-send -t 0 "$(date)" "$line" &
-mpv "$HOME/Documents/alert.mp3"
+#mpv "$HOME/Documents/alert.mp3"

@@ -5,23 +5,24 @@
 # Outputs magnet link to be used with any torrent client
 # Usage: <script> <search_string>
 
-ERR_NO_ARGS=35
+exit_err() {
+		echo "$1"
+		exit 1
+}
 
-if [ -z "$1" ]
-then
-	printf "Not enough arguments!\\nUsage: <script> <search_string>\\n"
-	exit $ERR_NO_ARGS
-fi
+[ -z "$1" ] && exit_err "Usage: <script> <search_string>"
 
 IFS=$'\n'
-SEARCH_STRING="$(echo "https://1337x.to/search/$1/1/" | sed 's/\ /+/g')"
+SEARCH_STRING="$(echo "https://1337x.to/search/"$@"/1/" | sed 's/\ /+/g')"
+RESULT="$(curl -s "$SEARCH_STRING" | grep -P -o '/torrent/[^"]*')"
+
+[ -z "$RESULT" ] && exit_err "No torrent found."
 
 # Select a torrent from a list of torrents found
 ####################################################################
 # By default the select statement's output is printed to stderr (2)#
 ####################################################################
-select torrent in $(curl -s "$SEARCH_STRING" | grep -P -o '/torrent/[^"]*')
-do
+select torrent in $RESULT; do
 	TORRENT_LINK="https://1337x.to$torrent"
 	curl -s "$TORRENT_LINK" | grep -m 1 -P -o 'magnet[^"]*'
 	break
